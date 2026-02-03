@@ -1,3 +1,0 @@
-This is my Design Accessbility Tool Project 
-
-More Info to come soon...
