@@ -9,4 +9,6 @@ I added in the color inputs and the live preview. At the moment you are able to 
 I plan to add in a section where it will tell where your color choices fall on the accessbility scale.
 
 
-Here's the link if you are curious to check it out!
+Here's the link if you want to check it out!
+https://kayla-noelle.github.io/design-accessbility-tool/
+

@@ -12,4 +12,5 @@ export default {
     extend: {},
   },
   plugins: [react()],
+  base:'/design-accessbility-tool/'
 }
