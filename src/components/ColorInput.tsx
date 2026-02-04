@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 type ColorInputProps = {
   backgroundColor: string;

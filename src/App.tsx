@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import ColorInput  from "./components/ColorInput";
 import Header from "./components/Header";
 import { Preview } from "./components/Preview";
