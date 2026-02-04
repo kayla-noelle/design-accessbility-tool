@@ -3,8 +3,8 @@ import { useState } from "react";
 import ColorInput  from "./components/ColorInput";
 import Header from "./components/Header";
 import { Preview } from "./components/Preview";
-//import { Feedback } from "./components/Feedback";
 import Footer from "./components/Footer";
+import Feedback from "./components/Feedback";
 
 function App() {
 
@@ -39,8 +39,15 @@ function App() {
            btnTextColor={btnTextColor}
              />
         </section>
-        {/* Accessbility Rating Results */}
        </main>
+        {/* Accessbility Rating Results */}
+        <Feedback
+        backgroundColor ={backgroundColor}
+           headingColor={headingColor}
+           bodyColor ={bodyColor}
+           uiColor={uiColor}
+           btnTextColor={btnTextColor}
+         />
        <Footer />
     </div>   
 
