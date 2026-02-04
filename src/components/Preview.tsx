@@ -1,35 +1,28 @@
-import React from "react";
-
+//import React from "react";
 type PreviewProps = {
-  color: string;
-  usage: string;
+  backgroundColor: string;
+  headingColor:string;
+  bodyColor:string;
+  uiColor:string;
+  btnTextColor: string;
 };
 
-export function Preview({ color, usage }: PreviewProps) {
+export function Preview({ backgroundColor, headingColor, bodyColor, uiColor, btnTextColor }: PreviewProps) {
   return (
-    <section
-      style={{
-        padding: "1.5rem",
-        border: "1px solid #e5e7eb",
-        borderRadius: "8px",
-      }}
+    <section className="p-6 bg-white rounded-xl shadow space-y-4"
+      style={{ backgroundColor }}
     >
-      <h2>Live Preview</h2>
-      <p style={{ color }}>
-        This is an example of {usage} text using your selected color.
+      <h2 className="text-4xl" style={{ color: headingColor }}>Heading</h2>
+      <p style={{color: bodyColor}}>
+        This is an example of text using your selected color.
+        Lorem ipsum dolor sit amet...
       </p>
-      <button
-        style={{
-          backgroundColor: color,
-          color: "#fff",
-          padding: "0.5rem 1rem",
-          border: "none",
-          borderRadius: "4px",
-          marginTop: "1rem",
-        }}
-      >
+      <button className="text-white font-bold py-2 px-4 rounded"
+        style={{backgroundColor: uiColor, color: btnTextColor }}>
         Button Example
       </button>
     </section>
   );
 }
+
+export default Preview;

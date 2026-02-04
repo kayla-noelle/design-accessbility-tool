@@ -1,23 +1,47 @@
 
 import React, { useState } from "react";
-import { ColorInput } from "./components/ColorInput";
+import ColorInput  from "./components/ColorInput";
 import Header from "./components/Header";
+import { Preview } from "./components/Preview";
+//import { Feedback } from "./components/Feedback";
+import Footer from "./components/Footer";
 
 function App() {
 
-      const [color, setColor] = useState("#4f46e5");
-      const [usage, setUsage ] = useState("body");
+      const [backgroundColor, setBackgroundColor] = useState("#ffffff");
+      const [headingColor, setHeadingColor] =useState ("#000000");
+      const [bodyColor, setBodyColor] =useState("#000000");
+      const [btnTextColor, setBtnTextColor] =useState("#000000");
+      const [uiColor, setUiColor] =useState("#ffffff");
 
   return (
     <div className="font-bold min-h-screen bg-gray-50 text-gray-900">
-     {/*Header */}
      <Header />
-
-       {/* Main content */}
-
        <main className="max-w-4xl mx-auto px-4 py-10 space-y-8">
-        <ColorInput label="Base Color" value={color} onChange={setColor} />
+        <section className= "grid grid-cols-1 md:grid-cols-2 gap-6">
+           <ColorInput 
+           backgroundColor ={backgroundColor}
+           setBackgroundColor ={setBackgroundColor}
+           headingColor ={headingColor}
+           setHeadingColor={setHeadingColor}
+           bodyColor ={bodyColor}
+           setBodyColor={setBodyColor}
+           uiColor ={uiColor}
+           setUiColor ={setUiColor}
+           btnTextColor= {btnTextColor}
+           setBtnTextColor = {setBtnTextColor}
+             />
+           <Preview
+           backgroundColor ={backgroundColor}
+           headingColor={headingColor}
+           bodyColor ={bodyColor}
+           uiColor={uiColor}
+           btnTextColor={btnTextColor}
+             />
+        </section>
+        {/* Accessbility Rating Results */}
        </main>
+       <Footer />
     </div>   
 
   );
