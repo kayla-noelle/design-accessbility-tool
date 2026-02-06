@@ -34,7 +34,7 @@ function ColorInput({
           type="color"
           value={backgroundColor}
           onChange={(e) => setBackgroundColor(e.target.value)}
-          className="w-full h-12 cursor-pointer"
+          className="size-40 cursor-pointer"
         />
       </div>
       {/* Heading */}
@@ -44,7 +44,7 @@ function ColorInput({
           type="color"
           value={headingColor}
           onChange={(e) => setHeadingColor(e.target.value)}
-          className="w-full h-12 cursor-pointer"
+          className="size-40 cursor-pointer"
         />
       </div>
       <div className="p-6 mt-8 bg-white rounded-xl shadow space-y-4">
@@ -53,7 +53,7 @@ function ColorInput({
           type="color"
           value={bodyColor}
           onChange={(e) => setBodyColor(e.target.value)}
-          className="w-full h-12 cursor-pointer"
+          className="size-40 cursor-pointer"
         />
       </div>
       <div className="p-6 mt-8 bg-white rounded-xl shadow space-y-4">
@@ -63,14 +63,14 @@ function ColorInput({
           type="color"
           value={uiColor}
           onChange={(e) => setUiColor(e.target.value)}
-          className="w-full h-12 cursor-pointer"
+          className="size-40 cursor-pointer"
         />
         <p>Button Text</p>
          <input
           type="color"
           value={btnTextColor}
           onChange={(e) => setBtnTextColor(e.target.value)}
-          className="w-full h-12 cursor-pointer"
+          className="size-40 cursor-pointer"
         />
       </div>
     </section>
