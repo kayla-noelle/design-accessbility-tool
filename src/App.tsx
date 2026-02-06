@@ -18,6 +18,14 @@ function App() {
     <div className="font-bold min-h-screen bg-gray-50 text-gray-900">
      <Header />
        <main className="max-w-4xl mx-auto px-4 py-10 space-y-8">
+         {/* Accessbility Rating Results */}
+        <Feedback
+        backgroundColor ={backgroundColor}
+           headingColor={headingColor}
+           bodyColor ={bodyColor}
+           uiColor={uiColor}
+           btnTextColor={btnTextColor}
+         />
         <section className= "grid grid-cols-1 md:grid-cols-2 gap-6">
            <ColorInput 
            backgroundColor ={backgroundColor}
@@ -40,14 +48,7 @@ function App() {
              />
         </section>
        </main>
-        {/* Accessbility Rating Results */}
-        <Feedback
-        backgroundColor ={backgroundColor}
-           headingColor={headingColor}
-           bodyColor ={bodyColor}
-           uiColor={uiColor}
-           btnTextColor={btnTextColor}
-         />
+       
        <Footer />
     </div>   
 
