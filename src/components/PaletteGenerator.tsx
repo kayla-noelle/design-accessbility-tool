@@ -93,14 +93,14 @@ export function PaletteGenerator({ onApplyColor }: PaletteGeneratorProps) {
       </div>
 
       {/* Controls */}
-      <div className="flex flex-wrap gap-4 items-end">
+      <div className="flex flex-wrap gap-4 items-start">
         <div className="space-y-1">
           <label className="text-sm font-semibold text-gray-700 block">Base Color</label>
           <input
             type="color"
             value={baseColor}
             onChange={(e) => setBaseColor(e.target.value)}
-            className="size-11 cursor-pointer rounded-lg border border-gray-300"
+            className="color-swatch size-11 cursor-pointer rounded-lg overflow-hidden"
           />
         </div>
 
@@ -121,7 +121,7 @@ export function PaletteGenerator({ onApplyColor }: PaletteGeneratorProps) {
 
         <button
           onClick={handleGenerate}
-          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition-colors mt-6"
         >
           Generate Palette
         </button>

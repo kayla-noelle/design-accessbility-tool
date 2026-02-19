@@ -3,11 +3,27 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', system-ui, sans-serif;
   background-color: rgb(255, 255, 255);
   color: #242424;
 }
 
 body {
   margin: 0;
+}
+
+/* Removes the gray chrome from native color inputs */
+.color-swatch {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.color-swatch::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.color-swatch::-webkit-color-swatch {
+  border: none;
+}
+.color-swatch::-moz-color-swatch {
+  border: none;
 }

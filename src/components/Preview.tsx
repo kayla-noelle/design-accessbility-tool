@@ -9,7 +9,7 @@ type PreviewProps = {
 
 export function Preview({ backgroundColor, headingColor, bodyColor, uiColor, btnTextColor }: PreviewProps) {
   return (
-    <section className="p-6 bg-white rounded-xl shadow space-y-4"
+    <section className="p-6 bg-white rounded-xl shadow space-y-4 self-start"
       style={{ backgroundColor }}
     >
       <h2 className="text-4xl" style={{ color: headingColor }}>Heading</h2>
