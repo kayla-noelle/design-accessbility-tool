@@ -4,7 +4,7 @@ Currently working on developing a tool for designers where they can check the le
 
 
 #CURRENT UPDATE:
-WCAG Contrast has been installed. You now can see where the color contrasts falls in terms of accessibility. I plan to add in a color palette generator with other features in mind. 
+Color Generator Palette has been added as well as design tweaks.
 
 
 Here's the link if you want to check it out!
